@@ -42,10 +42,18 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4"></textarea>
-            <button class="submit-btn">Send Message</button>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="mailto:bytecharm2@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="ByteCharm Co." readonly>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="bytecharm2@gmail.com" readonly>
+                    
+                    <label for="message">Message:</label>
+                </form>
+            </section>            
         </form>
     </section>
 
