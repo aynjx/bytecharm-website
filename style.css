@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?jewelry') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Product Cards */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: #2C3E50;
+}
+
+button {
+    background-color: #E74C3C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #C0392B;
+}
+
+/* Contact Form */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.submit-btn {
+    width: 100%;
+    background-color: #2C3E50;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scale animation for buttons */
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply fade-in animation to sections */
+.hero, .products, #contact {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth hover effect for buttons */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #C0392B;
+    animation: buttonHover 0.4s ease-in-out;
+}
+
+/* Add a hover animation for product cards */
+.product {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide-in effect for header */
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Floating effect for hero text */
+.hero h1 {
+    animation: floatText 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatText {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+/* Import a cursive font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Classy color scheme */
+:root {
+    --primary-color: #fc2bbd; /* Elegant dark blue */
+    --accent-color: #D4AF37; /* Gold */
+    --background-color: #ff8eb9; /* Soft cream */
+    --text-color: #2C3E50; /* Dark text */
+}
+
+/* Apply background and font styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?luxury,jewelry') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Great Vibes', cursive;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+/* Product Cards */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: var(--primary-color);
+}
+
+/* Elegant Gold Buttons */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d684aa; /* Darker gold */
+}
+
+/* Contact Form */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: rgb(224, 39, 147);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: rgb(229, 255, 0);
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .products, #contact {
+    animation: fadeIn 1.5s ease-in-out;
+}
+header h1 {
+    font-family: 'Great Vibes', cursive;  /* This makes it cursive */
+    font-size: 60px;  /* Bigger, more elegant */
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--accent-color); /* Gold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+/* About Page Styling */
+.about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: var(--accent-color); /* Gold */
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Add a subtle divider */
+.about-content hr {
+    border: 1px solid var(--accent-color);
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Button Styling */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #B8860B;
+}
