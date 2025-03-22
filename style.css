@@ -134,3 +134,53 @@ html {
 section {
     animation: fadeIn 1s ease-in-out;
 }
+/* Product Section */
+#products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-category {
+    margin-bottom: 40px;
+}
+
+.product-category h3 {
+    font-size: 24px;
+    color: #5D4037; /* Dark Brown */
+    margin-bottom: 20px;
+}
+
+/* Grid layout for products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual product styling */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3E2723;
+}
