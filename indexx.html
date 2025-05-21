@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ByteCharm Co.</title>
+  <link rel="stylesheet" href="design.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="hero">
+    <h1 class="company-name">ByteCharm Co.</h1>
+    <p class="tagline">Your Story, Your Charm, Fueled by Technology</p>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At ByteCharm, we blend technology and style to create meaningful, personalized jewelry. 
+      Our stainless steel bracelets are more than just accessories—they hold memories, 
+      connections, and unique expressions of individuality.</p>
+  </section>
+
+  <section id="mission">
+    <h2>Mission</h2>
+    <p>At ByteCharm, our mission is to redefine personalized jewelry by combining elegance and technology. 
+      We aim to provide high-quality, stylish, and functional accessories that allow individuals to 
+      express themselves while seamlessly integrating digital convenience into everyday wear.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <p>ByteCharm Co. aims to become a digital innovation leader which develops remarkable functional 
+      solutions from brilliant ideas. The company exists to create influential digital 
+      encounters through combining technology strength with creative thinking.</p>
+  </section>
+  <section id="products">
+    <section id="products">
+      <h2>Our Products</h2>
+      <p class="product-instruction">🛍️ <strong>Click on any product to reveal more details!</strong></p>
+    
+      <!-- Bracelets Row -->
+      <div class="product-row">
+        <div class="product-box">
+          <img src="bracelet1.jpg" alt="Minimalist Bracelet">
+          <p><strong>Minimalist Bracelet</strong></p>
+          <div class="description">This variant of ByteCharm is a plain stainless steel bracelet with no engravings, 
+            perfect for those who prefer a simple yet elegant look. Customers can choose their preferred designs.</div>
+        </div>
+        <div class="product-box">
+          <img src="bracelet2.jpg" alt="Engraved Bracelet">
+          <p><strong>Engraved Bracelet</strong></p>
+          <div class="description">A engraved variant is a bracelet featuring a customized name engraving, 
+            making it personalized. The customers can choose a size of nameplate they prefer.</div>
+        </div>
+      </div>
+    
+      <!-- Necklaces Row -->
+      <div class="product-row">
+        <div class="product-box">
+          <img src="necklace1.jpg" alt="Minimalist Necklace">
+          <p><strong>Minimalist Necklace</strong></p>
+          <div class="description">A timeless piece for those who adore simplicity. This stainless steel necklace 
+            features a clean, polished design perfect for daily wear or gifting—classic 
+            charm, made smart and effortless.</div>
+        </div>
+        <div class="product-box">
+          <img src="necklace2.jpg" alt="Engraved Necklace">
+          <p><strong>Engraved Necklace</strong></p>
+          <div class="description">Our engraved necklaces are crafted from premium stainless steel and customized  
+            with names, initials, or meaningful text—wear it as a personal keepsake or a thoughtful gift for 
+            someone special.</div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/198DGyhSvs/" target="_blank">
+          <i class="fab fa-facebook-f"></i> ByteCharm Jewelry
+        </a>
+        <a href="mailto:bytecharmco@gmail.com">
+          <i class="fas fa-envelope"></i> bytecharmco@gmail.com
+        </a>
+        <a href="https://www.instagram.com/bytecharm.co?igsh=YXU2bDZ0YjNxMHE1" target="_blank">
+          <i class="fab fa-instagram"></i> @bytecharm.co
+        </a>
+      </div>
+    </section>    
+  <script>
+    function toggleDescription(element) {
+      element.classList.toggle("active");
+    }
+  </script>
+  <script>
+    document.querySelectorAll('.product-box').forEach(box => {
+      box.addEventListener('click', () => {
+        box.classList.toggle('active');
+      });
+    });
+  </script>  
+</body>
+</html>
+
+
+
